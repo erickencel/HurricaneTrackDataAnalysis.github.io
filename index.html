@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hurricane Track Data</title>
+    <!--Mapbox Links-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Javascript link-->
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <!--Mapbox Map-->
+    <div id="map"></div>
+
+    <!--Title Window-->
+    <div class="title-container">
+        <div class="title">Hurricane Track Data Analysis</div>
+    </div>
+
+    <!--Table of Contents Window-->
+    <div class="toc-container">  
+        <div class="toc-title">Hurricane Data Layers</div>
+        <nav id="menu"></nav>
+    </div>
+
+   <!--Track Filter Window-->
+    <div class="filter-container">
+        <div class="filter-title">Filter Hurricane Tracks By Category</div>
+        <div class="reset-button">Reset Filter</div>
+        <div class="filter-button" data-operator="0">Tropical Storm</div>
+        <div class="filter-button" data-operator="1">Category 1</div>
+        <div class="filter-button" data-operator="2">Category 2</div>
+        <div class="filter-button" data-operator="3">Category 3</div>
+        <div class="filter-button" data-operator="4">Category 4</div>
+        <div class="filter-button" data-operator="5">Category 5</div>
+    </div>
+
+    <!--Probability Grid Legend Window-->
+    <div class="legend-container">
+        <div class="legend-title">% Probability of Landfall</div>
+        <div class="legend-button">10%</div>
+        <div class="legend-button">20%</div>
+        <div class="legend-button">30%</div>
+        <div class="legend-button">40%</div>
+        <div class="legend-button">50%</div>
+        <div class="legend-button">60%</div>
+        <div class="legend-button">70%</div>
+        <div class="legend-button">80%</div>
+        <div class="legend-button">90%</div>
+        <div class="legend-button">100%</div>
+    </div>
+
+    <!--Legend Color Patches-->
+    <div class="legend-color-container">
+        <div class="color-button-10"></div>
+        <div class="color-button-20"></div>
+        <div class="color-button-30"></div>
+        <div class="color-button-40"></div>
+        <div class="color-button-50"></div>
+        <div class="color-button-60"></div>
+        <div class="color-button-70"></div>
+        <div class="color-button-80"></div>
+        <div class="color-button-90"></div>
+        <div class="color-button-100"></div>
+
+    </div>
+
+</body>
+</html>
